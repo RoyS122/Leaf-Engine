@@ -116,7 +116,7 @@ int init_room(Room *r){
     r->GameObjectArray = NULL;
     r->GameObjectNBR = 0;
     r->setup = NULL;
-    r->free_room = NULL;
+    r->free_room = free_room;
     r->step = NULL;
     r->draw = NULL;
     return 0;

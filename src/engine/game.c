@@ -206,6 +206,7 @@ int remove_room(Game *game, int id)
     game->RoomArray[id]->free_room(game->RoomArray[id]);
     for (int i = id; i < game->RoomNBR - 1; i++)
     {
+        SDL_Log("try to mv: %i", i);
         game->RoomArray[i] = game->RoomArray[i + 1];
     }
 	SDL_Log("after free: %i", id);
@@ -376,7 +377,9 @@ int gameloop(Game *game) {
                 if (game->menuOpen > -1)
                 {
                     Menu *m = &(game->MenuArray[game->menuOpen]);
-
+                    if(!m) {
+                        break;
+                    }
                     switch (event.key.keysym.sym)
                     {
                     case SDLK_DOWN: // Naviguer vers le bas
@@ -430,16 +433,22 @@ int gameloop(Game *game) {
         frameStart = SDL_GetTicks(); // Obtenir le temps actuel
         
 
-        if (game->menuOpen > -1 && game->MenuNBR > 0)
+        if (game->menuOpen > -1)
         {
-            
-            SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
-            SDL_RenderClear(game->renderer);
+             if(!game->MenuNBR > 0) {
+                game->menuOpen = -1;
+               
+             }else {
+                SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
+                SDL_RenderClear(game->renderer);
 
-            draw_menu(&game->MenuArray[game->menuOpen], game->renderer);
+                draw_menu(&game->MenuArray[game->menuOpen], game->renderer);
       
-            SDL_RenderPresent(game->renderer);
-            continue;
+                SDL_RenderPresent(game->renderer);
+                continue;
+             }
+         
+            
         }
       
       

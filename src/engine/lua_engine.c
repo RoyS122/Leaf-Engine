@@ -39,6 +39,7 @@ void register_engine_api(lua_State* L)
     // Ajouter Engine.create_room()
     lua_pushcfunction(L, lua_create_room);
     lua_setfield(L, -2, "create_room");
+    
     lua_pushcfunction(L, lua_engine_log);
     lua_setfield(L, -2, "log");
     
