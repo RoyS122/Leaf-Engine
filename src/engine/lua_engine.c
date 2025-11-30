@@ -5,7 +5,17 @@
 
 Game* Engine_game = NULL;
 
-
+/**
+ *  Create a game object,
+ * @param Go - The id (adress, pointer) of the game object to set sprite
+ * @param w - the width of the spritesheet(size of the file you put in)
+ * @param h - the height of the spritesheet(size of the file you put in)
+ * @param col - the number of column of the spritesheet
+ * @param row - the number of rows of the spritesheet
+ * @param animation_speed - the speed in frame per second of the animation
+ * 
+ * @return nil Its ok; nil + string error
+ */
 int lua_setsprite(lua_State *L) {
     GameObject *go = lua_touserdata(L, 1);
     if (!go) {
@@ -29,14 +39,15 @@ int lua_setsprite(lua_State *L) {
 
     go->sprite.animSpeed = anim_speed;
     go->sprite.width = sprite_w / col;
+    go->sprite.totalFrames = col * row;
     go->sprite.height = sprite_h / row;
 
+    
     go->sprite.shape.h = go->sprite.height;
     go->sprite.shape.w =  go->sprite.width;
     
     return 0;
 }
-
 
 /**
  *  Create a game object,
