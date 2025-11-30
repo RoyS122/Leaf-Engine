@@ -1,101 +1,923 @@
 Game started...
 INFO: Game started...
+INFO: try to create game object from lua script
+INFO: try adding go in room
+INFO: Sprite bien chargé
 INFO: debut gameloop function:
 INFO: debut while:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
+INFO: After game object draw:
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
 INFO: test
+INFO: room draw: test
+INFO: try to draw game object
 INFO: After game object draw:
 INFO: End removing menus
 INFO: try to remove ID: 0
+INFO: try to remove ID: 0
+INFO: after free: 0
+INFO: after free1: 0
+INFO: after free2: 0
 INFO: after free: 0
 INFO: after free1: 0
 INFO: after free2: 0
