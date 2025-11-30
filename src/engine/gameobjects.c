@@ -4,30 +4,7 @@
 #include <stdio.h>
 #include "sprites.h"
 
-/**
- * Initialize a game object (the base of any object to add in the game structure)
- * @param go A pointer to the game object to initialize
- * @return 0 ok; 1 Invalid parameters
- */
-int init_gameobject(GameObject *go)
-{
-    if (go == NULL)
-    {
-        SDL_Log("Invalid parameters(%p)", go);
-        return 1;
-    }
 
-    go->collision = (SDL_Rect) {0, 0, 0, 0};
-    go->x = 0.f;
-    go->y = 0.f;
-    go->killed = 0;
-    go->step = NULL;
-    go->draw = NULL;
-	go->free_obj = NULL;
-    init_sprite(&go->sprite);
-
-    return 0;
-}
 
 /**
  *  Frees all resources associated with a menu
@@ -103,4 +80,45 @@ Vector2D dir_to(const int start_x, const int start_y, const int target_x, const 
     direction.y = dy / distance;
 
     return direction;
+}
+
+int draw_gameobject(GameObject *go, SDL_Renderer *renderer) {
+    SDL_Log("try to draw game object");
+   if (go == NULL)
+    {
+        SDL_Log("Invalid parameters(%p)", go);
+        return 1;
+    }
+    if (go->sprite.texture != NULL)
+    {
+        go->sprite.shape.x = go->x;
+        go->sprite.shape.y = go->y;
+        draw_sprite(renderer, &go->sprite);
+    }
+    return 0; // ok
+}
+
+/**
+ * Initialize a game object (the base of any object to add in the game structure)
+ * @param go A pointer to the game object to initialize
+ * @return 0 ok; 1 Invalid parameters
+ */
+int init_gameobject(GameObject *go)
+{
+    if (go == NULL)
+    {
+        SDL_Log("Invalid parameters(%p)", go);
+        return 1;
+    }
+
+    go->collision = (SDL_Rect) {0, 0, 0, 0};
+    go->x = 0.f;
+    go->y = 0.f;
+    go->killed = 0;
+    go->step = NULL;
+    go->draw = draw_gameobject;
+	go->free_obj = NULL;
+    init_sprite(&go->sprite);
+
+    return 0;
 }

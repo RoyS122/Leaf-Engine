@@ -28,10 +28,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     game.L = L;
     register_engine_api(L);         // <-- ici tu passes L
 
-    if (luaL_dofile(L, "game.lua") != LUA_OK) {
-        const char* err = lua_tostring(L, -1);
-        printf("Erreur Lua : %s\n", err);
-    }
+    
     // SDL_Log("MID %d", game.EnnemyNBR);
     // Initialisation de la SDL
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
@@ -70,7 +67,13 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
         SDL_Quit();
         return 1;
     }
+    game.renderer = renderer; 
 
+    if (luaL_dofile(L, "game.lua") != LUA_OK) {
+        const char* err = lua_tostring(L, -1);
+        printf("Erreur Lua : %s\n", err);
+    }
+    
     gameloop(&game);
 
     

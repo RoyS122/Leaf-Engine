@@ -10,6 +10,7 @@
  */
 int add_gameobject_in_room(Room *r, GameObject *go)
 {
+    SDL_Log("try adding go in room");
     if (!r)
     {
         SDL_Log("Invalid parameters: (game: %p)", r);
@@ -102,6 +103,18 @@ int free_room(Room *r) {
 	return 0;
 }
 
+int draw_room(Room *r, SDL_Renderer *renderer) {
+        SDL_Log("room draw: test");
+        for (int i = 0; i < r->GameObjectNBR; i++)
+        {
+            if (r->GameObjectArray[i]->draw)
+            {
+                r->GameObjectArray[i]->draw(r->GameObjectArray[i], renderer);
+            }
+        }
+}
+
+
 /**
  * Initialize the attribute of a room
  * @param r A pointer to the game to free
@@ -118,6 +131,7 @@ int init_room(Room *r){
     r->setup = NULL;
     r->free_room = free_room;
     r->step = NULL;
-    r->draw = NULL;
+    r->draw = draw_room;
     return 0;
 }
+

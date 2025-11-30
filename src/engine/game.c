@@ -236,7 +236,9 @@ int switch_room(Game *game, int roomId) {
     if(roomId != -1){ 
         game->currentRoom = roomId;
         const Room *gameR = game->RoomArray[game->currentRoom];
-        gameR->setup(gameR);
+        if (gameR->setup != NULL) {
+            gameR->setup(gameR);
+        }
     }else{
         game->currentRoom = -1;
     }
@@ -457,7 +459,10 @@ int gameloop(Game *game) {
 
         // step_player(&player, &game);
         if (game->currentRoom > - 1) {
-            game->RoomArray[game->currentRoom]->step(game->RoomArray[game->currentRoom], game);
+            if(game->RoomArray[game->currentRoom]->step != NULL) {
+                game->RoomArray[game->currentRoom]->step(game->RoomArray[game->currentRoom], game);
+            }
+        
         } 
         for (int i = 0; i < game->GameObjectNBR; i++)
         {
@@ -473,7 +478,9 @@ int gameloop(Game *game) {
 
         // draw_player(player, renderer);
         if (game->currentRoom > - 1) {
-            if(game->RoomArray[game->currentRoom]->draw(game->RoomArray[game->currentRoom], game->renderer) != 0) return 2;
+            if(game->RoomArray[game->currentRoom]->draw != NULL) {
+                game->RoomArray[game->currentRoom]->draw(game->RoomArray[game->currentRoom], game->renderer);
+            }
         } 
         for (int i = 0; i < game->GameObjectNBR; i++)
         {

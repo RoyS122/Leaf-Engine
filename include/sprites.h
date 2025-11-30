@@ -8,5 +8,6 @@ int draw_sprite(SDL_Renderer *renderer, Sprite *sprite);
 int update_sprite(Sprite *sprite, int frameRate);
 int init_sprite(Sprite *sprite);
 int free_sprite(Sprite *s);
+int load_texture(Sprite *sprite, SDL_Renderer *renderer, const char *path);
 
 #endif // SPRITES_H

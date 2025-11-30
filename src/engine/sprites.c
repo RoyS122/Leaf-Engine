@@ -106,3 +106,31 @@ int update_sprite(Sprite *sprite, int frameRate)
     SDL_Log("current frame %i", sprite->currentFrame);
     return 0;
 }
+
+int load_texture(Sprite *sprite, SDL_Renderer *renderer, const char *path) {
+
+      if (sprite == NULL || renderer == NULL || path == NULL)
+    {
+        SDL_Log("Invalid parameters(sprite: %p renderer: %p path: %p)", sprite, renderer, path);
+        return 1;
+    }
+    
+    SDL_Surface *temp_surface = IMG_Load(path); // load png img
+    if (!temp_surface)
+    {
+        SDL_Log("Erreur de chargement du sprite: %s", SDL_GetError());
+        return 2;
+    }
+
+    sprite->texture = SDL_CreateTextureFromSurface(renderer, temp_surface);
+
+    SDL_FreeSurface(temp_surface);
+    
+    if (!sprite->texture)
+    {
+        SDL_Log("Erreur de création de la texture: %s", SDL_GetError());
+		return 3;
+    }
+    SDL_Log("Sprite bien chargé");
+    return 0; // ok
+} 
