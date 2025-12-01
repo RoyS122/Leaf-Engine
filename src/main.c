@@ -68,12 +68,12 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
         return 1;
     }
     game.renderer = renderer; 
-
+    
     if (luaL_dofile(L, "game.lua") != LUA_OK) {
         const char* err = lua_tostring(L, -1);
         printf("Erreur Lua : %s\n", err);
     }
-    
+
     gameloop(&game);
 
     

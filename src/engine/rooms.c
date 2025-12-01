@@ -115,6 +115,17 @@ int draw_room(Room *r, SDL_Renderer *renderer) {
 }
 
 
+
+int step_room(Room *r, Game *game) {
+        // SDL_Log("room draw: test");
+        for (int i = 0; i < r->GameObjectNBR; i++)
+        {
+            if (r->GameObjectArray[i]->step)
+            {
+                r->GameObjectArray[i]->step(r->GameObjectArray[i], game);
+            }
+        }
+}
 /**
  * Initialize the attribute of a room
  * @param r A pointer to the game to free
@@ -130,7 +141,7 @@ int init_room(Room *r){
     r->GameObjectNBR = 0;
     r->setup = NULL;
     r->free_room = free_room;
-    r->step = NULL;
+    r->step = step_room;
     r->draw = draw_room;
     return 0;
 }

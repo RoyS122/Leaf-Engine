@@ -83,7 +83,6 @@ Vector2D dir_to(const int start_x, const int start_y, const int target_x, const 
 }
 
 int draw_gameobject(GameObject *go, SDL_Renderer *renderer) {
-    SDL_Log("try to draw game object");
    if (go == NULL)
     {
         SDL_Log("Invalid parameters(%p)", go);
@@ -95,6 +94,30 @@ int draw_gameobject(GameObject *go, SDL_Renderer *renderer) {
         go->sprite.shape.y = go->y;
         draw_sprite(renderer, &go->sprite);
     }
+    return 0; // ok
+}
+
+int step_gameobject(GameObject *go, Game *game) {
+    SDL_Log("Info test step game object");
+    if (go == NULL) {
+        SDL_Log("Invalid parameters(%p)", go);
+        return 1; // error in parameters
+    }
+
+    if(game->L != NULL && go->lua_step_ref != -1) {
+        lua_rawgeti(game->L, LUA_REGISTRYINDEX, go->lua_step_ref);
+
+    
+        GameObject **ud = lua_newuserdata(game->L, sizeof(GameObject*));
+        *ud = go;
+        luaL_getmetatable(game->L, "GameObjectMeta");
+        lua_setmetatable(game->L, -2);
+
+        if (lua_pcall(game->L, 1, 0, 0) != LUA_OK) {
+            SDL_Log("Lua step error: %s", lua_tostring(game->L, -1));
+            lua_pop(game->L, 1);
+        }
+    } 
     return 0; // ok
 }
 
@@ -111,11 +134,12 @@ int init_gameobject(GameObject *go)
         return 1;
     }
 
+    go->lua_step_ref = -1;
     go->collision = (SDL_Rect) {0, 0, 0, 0};
     go->x = 0.f;
     go->y = 0.f;
     go->killed = 0;
-    go->step = NULL;
+    go->step = step_gameobject;
     go->draw = draw_gameobject;
 	go->free_obj = NULL;
     init_sprite(&go->sprite);
