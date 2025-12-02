@@ -1,802 +1,280 @@
 Game started...
 INFO: Game started...
+INFO: try to create room 1ST
+INFO: try to create room 2nd
 INFO: [Lua] test de success
-INFO: try to create game object from lua script
+INFO: Create game object 1st
 INFO: try adding go in room
+INFO: Create game object 2nd
 INFO: Sprite bien chargé
+INFO: Set room step 1st
+INFO: Set room step
+INFO: Set room step end
 INFO: debut gameloop function:
 INFO: debut while:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 0.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 1.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 2.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 3.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 4.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 5.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 6.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 7.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 8.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 9.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 10.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 11.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 12.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 13.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 14.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 15.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 16.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 17.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 18.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 19.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 20.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 21.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 22.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 23.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 24.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 25.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 26.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 27.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 28.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 29.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 30.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 31.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 32.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 33.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 34.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 35.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 36.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 37.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 38.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 39.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 40.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 41.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 42.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 43.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 44.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 45.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 46.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 47.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 48.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 49.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 50.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 51.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 52.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 53.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 54.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 55.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 56.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 57.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 58.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 59.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 60.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 61.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 62.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 63.0
 INFO: room draw: test
 INFO: After game object draw:
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 64.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 65.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 66.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 67.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 68.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 69.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 70.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 71.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 72.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 73.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 74.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 75.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 76.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 77.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 78.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 79.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 80.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 81.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 82.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 83.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 84.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 85.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 86.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 87.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 88.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 89.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 90.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 91.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 92.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 93.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 94.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 95.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 96.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 97.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 98.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 99.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 100.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 101.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 102.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 103.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 104.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 105.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 106.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 107.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 108.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 109.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 110.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 111.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 112.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 113.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 114.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 115.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 116.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 117.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 118.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 119.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 120.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 121.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 122.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 123.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 124.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 125.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 126.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 127.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 128.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 129.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 130.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 131.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 132.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 133.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 134.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 135.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 136.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 137.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 138.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 139.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 140.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 141.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 142.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 143.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 144.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 145.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 146.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 147.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 148.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 149.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 150.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 151.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 152.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 153.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 154.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 155.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 156.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 157.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 158.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 159.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 160.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 161.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 162.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 163.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 164.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 165.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 166.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 167.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 168.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 169.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 170.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 171.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 172.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 173.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 174.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 175.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 176.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 177.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 178.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 179.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 180.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 181.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 182.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 183.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 184.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 185.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 186.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 187.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 188.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 189.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 190.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 191.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 192.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 193.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 194.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 195.0
-INFO: room draw: test
-INFO: After game object draw:
-INFO: Info test step game object
-INFO: [Lua] Test 196.0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: test
+INFO: [Lua] Test room step
 INFO: Info test step game object
-INFO: [Lua] Test 197.0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: End removing menus
