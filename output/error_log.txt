@@ -3,282 +3,2700 @@ INFO: Game started...
 INFO: try to create room 1ST
 INFO: try to create room 2nd
 INFO: [Lua] test de success
+INFO: [Lua] test cam cam x: 0.0
+INFO: Create game object 1st
+INFO: try adding go in room
+INFO: Create game object 2nd
 INFO: Create game object 1st
 INFO: try adding go in room
 INFO: Create game object 2nd
 INFO: Sprite bien chargé
-INFO: Set room step 1st
+INFO: Sprite bien chargé
 INFO: Set room step
 INFO: Set room step end
 INFO: debut gameloop function:
 INFO: debut while:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
+INFO: room draw: test
+INFO: After game object draw:
+INFO: [Lua] Test room step
+INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: [Lua] Test room step
+INFO: Info test step game object
 INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: test
 INFO: [Lua] Test room step
 INFO: Info test step game object
+INFO: Info test step game object
+INFO: test start check collision
+INFO: collision logs, 0
 INFO: room draw: test
 INFO: After game object draw:
 INFO: End removing menus
 INFO: try to remove ID: 0
+INFO: try to remove ID: 1
+INFO: after free: 1
+INFO: after free1: 1
+INFO: after free2: 1
 INFO: try to remove ID: 0
 INFO: after free: 0
 INFO: after free1: 0
