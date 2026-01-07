@@ -5,14 +5,23 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
-#include <lua.h>
-#include <lauxlib.h>
-#include <lualib.h>
-
+// Détection automatique du chemin Lua
+#ifdef _WIN32
+    // Windows
+    #include <lua.h>
+    #include <lauxlib.h>
+    #include <lualib.h>
+#else
+    // Linux/Unix
+    #include <lua5.4/lua.h>
+    #include <lua5.4/lauxlib.h>
+    #include <lua5.4/lualib.h>
+#endif
 // Déclarations anticipées
 typedef struct Game Game;
 typedef struct GameObject GameObject;
 typedef struct Room Room;
+
 
 #define MAX_BUTTONS 5 // The max number of buttons on a menu
 
@@ -44,7 +53,7 @@ typedef struct GameObject
 
     int lua_step_ref;
 
-    int (*step)(GameObject *go, Game *game); 
+    int (*step)(GameObject *go, Game *game);
     int (*draw)(GameObject *go, SDL_Renderer *renderer);
     int (*free_obj)(GameObject *go);
 } GameObject;
@@ -64,20 +73,20 @@ typedef struct
 {
     Button **buttons;
 	int ButtonNBR;
-	
+
     int selectedIndex;
 } Menu;
 
 typedef struct Room {
-    
+
     GameObject **GameObjectArray;
     int GameObjectNBR;
 
     Game *CurrentGame;
 
-   
+
     int (*setup)(Room *r);
-    int (*step)(Room *r, Game *game);  
+    int (*step)(Room *r, Game *game);
     int (*draw)(Room *r, SDL_Renderer *renderer);
     int (*free_room)(Room *r);
 
@@ -92,7 +101,7 @@ typedef struct Game
     int FrameRate;
     int FrameDelay;
 
-    lua_State *L; 
+    lua_State *L;
 
     SDL_Renderer *renderer;
     TTF_Font *font;

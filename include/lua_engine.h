@@ -1,9 +1,18 @@
 #ifndef LUA_ENGINE_H
 #define LUA_ENGINE_H
 
-#include <lua.h>
-#include <lauxlib.h>
-#include <lualib.h>
+// Détection automatique du chemin Lua
+#ifdef _WIN32
+    // Windows
+    #include <lua.h>
+    #include <lauxlib.h>
+    #include <lualib.h>
+#else
+    // Linux/Unix
+    #include <lua5.4/lua.h>
+    #include <lua5.4/lauxlib.h>
+    #include <lua5.4/lualib.h>
+#endif
 
 // Inclure les headers de ton moteur
 #include "game.h"        // Pour Game

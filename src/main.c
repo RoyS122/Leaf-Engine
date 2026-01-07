@@ -7,15 +7,27 @@
 #include "types.h"
 #include "buttons.h"
 #include "menus.h"
-#include <windows.h>
 #include "lua_engine.h"
 
-int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+// 1. On n'inclut windows.h que sur Windows
+#ifdef _WIN32
+    #include <windows.h>
+#endif
 
+// 2. Utiliser main standard au lieu de WinMain
+// SDL2 s'occupe de faire la conversion en WinMain sur Windows automatiquement
+int main(int argc, char* argv[])
 {
-    freopen("error_log.txt", "w", stderr);
-    fprintf(stderr, "Game started...\n");
+    // Empêcher les warnings "unused parameter"
+    (void)argc;
+    (void)argv;
 
+    // 3. freopen est risqué sur certains systèmes, on peut le protéger
+#ifdef _WIN32
+    freopen("error_log.txt", "w", stderr);
+#endif
+
+    fprintf(stderr, "Game started...\n");
     SDL_Log("Game started...");
 
     Game game;
@@ -23,14 +35,11 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     game.DisplayCollideBoxes = 1;
     Engine_game = &game;
 
-    lua_State* L = luaL_newstate(); // crée un nouvel état Lua
-    luaL_openlibs(L);               // ouvre les bibliothèques standard
+    lua_State* L = luaL_newstate();
+    luaL_openlibs(L);
     game.L = L;
-    register_engine_api(L);         // <-- ici tu passes L
+    register_engine_api(L);
 
-    
-    // SDL_Log("MID %d", game.EnnemyNBR);
-    // Initialisation de la SDL
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
     {
         SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
@@ -39,12 +48,10 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     if (TTF_Init() == -1)
     {
         SDL_Log("TTF_Init Error: %s", TTF_GetError());
-        fprintf(stderr, "TTF_Init Error: %s", TTF_GetError());
-
-        SDL_Quit(); // Assurez-vous de nettoyer SDL avant de quitter si l'initialisation échoue
+        SDL_Quit();
         return 1;
     }
-    // Création de la fenêtre
+
     SDL_Window *window = SDL_CreateWindow("Jeu SDL2",
                                           SDL_WINDOWPOS_CENTERED,
                                           SDL_WINDOWPOS_CENTERED,
@@ -58,7 +65,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
         return 1;
     }
 
-    // Création du rendu
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if (!renderer)
     {
@@ -67,25 +73,25 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
         SDL_Quit();
         return 1;
     }
-    game.renderer = renderer; 
-    
+    game.renderer = renderer;
+
     if (luaL_dofile(L, "game.lua") != LUA_OK) {
         const char* err = lua_tostring(L, -1);
-        printf("Erreur Lua : %s\n", err);
+        SDL_Log("Erreur Lua : %s", err); // SDL_Log est plus portable que printf
     }
 
     gameloop(&game);
 
-    
     // Nettoyage
+    free_game(&game);
 
-	free_game(&game);
+#ifdef _WIN32
     fflush(stderr);
     fclose(stderr);
-	
+#endif
+
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
-
     SDL_Quit();
 
     return 0;

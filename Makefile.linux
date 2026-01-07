@@ -1,0 +1,34 @@
+# ==========================================
+# Makefile Linux
+# ==========================================
+CC = gcc
+CFLAGS = -Iinclude -I/usr/include/lua5.4 -I/usr/include/SDL2 -Wall -Wextra -g
+LDFLAGS = -lSDL2 -lSDL2_ttf -lSDL2_image -llua5.4 -lm
+
+SRC_DIR = src
+BUILD_DIR = build
+OUTPUT_DIR = output
+TARGET = $(OUTPUT_DIR)/game
+
+SOURCES = $(shell find $(SRC_DIR) -name '*.c')
+OBJECTS = $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SOURCES))
+
+all: $(TARGET) copy_assets
+	@echo "✅ Compilation Linux terminée"
+
+$(TARGET): $(OBJECTS)
+	@mkdir -p $(OUTPUT_DIR)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+copy_assets:
+	@mkdir -p $(OUTPUT_DIR)/assets
+	@if [ -d "assets" ]; then cp -r assets/* $(OUTPUT_DIR)/assets/ 2>/dev/null || true; fi
+
+clean:
+	rm -rf $(BUILD_DIR) $(OUTPUT_DIR)
+
+.PHONY: all clean copy_assets

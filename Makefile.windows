@@ -1,0 +1,40 @@
+# ==========================================
+# Makefile Windows (MSYS2/UCRT64)
+# ==========================================
+CC = gcc
+CFLAGS = -Iinclude -I/ucrt64/include -I/ucrt64/include/SDL2 -Wall -Wextra -g
+LDFLAGS = -L/ucrt64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -llua -mwindows
+
+SRC_DIR = src
+BUILD_DIR = build
+OUTPUT_DIR = output
+TARGET = $(OUTPUT_DIR)/game.exe
+
+SOURCES = $(shell find $(SRC_DIR) -name '*.c')
+OBJECTS = $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SOURCES))
+
+all: $(TARGET) copy_assets copy_dlls
+	@echo "✅ Compilation Windows terminée"
+
+$(TARGET): $(OBJECTS)
+	@mkdir -p $(OUTPUT_DIR)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+copy_assets:
+	@mkdir -p $(OUTPUT_DIR)/assets
+	@if [ -d "assets" ]; then cp -r assets/* $(OUTPUT_DIR)/assets/ 2>/dev/null || true; fi
+
+copy_dlls:
+	@cp /ucrt64/bin/lua54.dll $(OUTPUT_DIR)/ 2>/dev/null || true
+	@cp /ucrt64/bin/SDL2.dll $(OUTPUT_DIR)/ 2>/dev/null || true
+	@cp /ucrt64/bin/SDL2_ttf.dll $(OUTPUT_DIR)/ 2>/dev/null || true
+	@cp /ucrt64/bin/SDL2_image.dll $(OUTPUT_DIR)/ 2>/dev/null || true
+
+clean:
+	rm -rf $(BUILD_DIR) $(OUTPUT_DIR)
+
+.PHONY: all clean copy_assets copy_dlls

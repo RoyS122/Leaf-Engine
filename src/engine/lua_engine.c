@@ -18,20 +18,20 @@ int lua_setStep(lua_State *L) {
  * @param col - the number of column of the spritesheet
  * @param row - the number of rows of the spritesheet
  * @param animation_speed - the speed in frame per second of the animation
- * 
+ *
  * @return nil Its ok; nil + string error
  */
 int lua_setsprite(lua_State *L) {
-    
+
     // Récupère la full userdata et vérifie qu'elle a la bonne metatable
     GameObject **ud = luaL_checkudata(L, 1, "GameObjectMeta");
     if (!ud || !*ud) {
         return luaL_error(L, "Invalid GameObject");
     }
     GameObject *go = *ud;
-   
-    
-    const char *path = lua_tostring(L, 2); 
+
+
+    const char *path = lua_tostring(L, 2);
     if (!path) {
         return luaL_error(L, "Invalid texture path");
     }
@@ -44,17 +44,17 @@ int lua_setsprite(lua_State *L) {
 
     if(load_texture(&go->sprite, Engine_game->renderer, path) != 0) {
         return luaL_error(L, "Failed to load texture");
-    }   
+    }
 
     go->sprite.animSpeed = anim_speed;
     go->sprite.width = sprite_w / col;
     go->sprite.totalFrames = col * row;
     go->sprite.height = sprite_h / row;
 
-    
+
     go->sprite.shape.h = go->sprite.height;
     go->sprite.shape.w =  go->sprite.width;
-    
+
     return 0;
 }
 
@@ -63,13 +63,13 @@ int lua_setsprite(lua_State *L) {
  * @param roomId - The id (adress, pointer) of the room to add game object
  * @param x - the x position of the object
  * @param y - the y position of the object
- * 
+ *
  * @return The id (adress, pointer) of thegame object ok; nil + string error
  */
 int lua_create_gameobject(lua_State* L) {
     SDL_Log("try to create game object from lua script");
     Room *room = lua_touserdata(L, 1);
-    const int x = lua_tointeger(L, 2); 
+    const int x = lua_tointeger(L, 2);
     const int y = lua_tointeger(L, 3);
 
     if(!x || !y || room == NULL) return luaL_error(L, "Argument missing");
@@ -82,8 +82,8 @@ int lua_create_gameobject(lua_State* L) {
 
     add_gameobject_in_room(room, ngo);
     GameObject **ud = lua_newuserdata(L, sizeof(GameObject*));
-    *ud = ngo; 
-    luaL_getmetatable(L, "GameObjectMeta");  
+    *ud = ngo;
+    luaL_getmetatable(L, "GameObjectMeta");
     lua_setmetatable(L, -2);
 
     return 1;
@@ -98,22 +98,22 @@ int lua_create_room(lua_State* L) {
     if (!nr) return luaL_error(L, "Failed to allocate Room");
     init_room(nr);
     if (add_room(Engine_game, nr) != 0) {
-        free(nr); 
-        lua_pushnil(L);                    
+        free(nr);
+        lua_pushnil(L);
         lua_pushstring(L, "Error when adding room to game");
-        return 2;                           
+        return 2;
     }
     switch_room(Engine_game, 0);
-    lua_pushlightuserdata(L, nr); 
+    lua_pushlightuserdata(L, nr);
     return 1;
 }
 
 int lua_engine_log(lua_State* L) {
-    
+
     const char* msg = lua_tostring(L, 1);
     if (!msg) msg = "(null)";
     SDL_Log("[Lua] %s\n", msg);
-    // fflush(stdout);            
+    // fflush(stdout);
     return 0;
 }
 
@@ -153,7 +153,7 @@ int lua_index_gameobject(lua_State *L) {
         lua_pushnumber(L, go->y);
         return 1;
     }
-    
+
     luaL_getmetatable(L, "GameObjectMeta");
     lua_pushvalue(L, 2);
     lua_rawget(L, -2);
@@ -173,7 +173,7 @@ int lua_newindex_gameobject(lua_State *L) {
         go->y = luaL_checknumber(L, 3);
         return 0;
     }
-    
+
     return luaL_error(L, "Unknown property '%s'", key);
 }
 
@@ -181,7 +181,7 @@ int lua_newindex_gameobject(lua_State *L) {
 static const luaL_Reg Engine_funcs[] = {
     {"create_room", lua_create_room},
     {"log", lua_engine_log},
-    
+
     {"create_gameobject", lua_create_gameobject},
     // {"spawn_object", lua_spawn_object},
     // Ajoute toutes tes fonctions ici ↓↓↓
@@ -196,15 +196,15 @@ static const luaL_Reg GameObject_methods[] = {
 };
 
 void register_engine_api(lua_State* L)
-{   
+{
 
 
-    lua_newtable(L);                     
+    lua_newtable(L);
 
-    luaL_setfuncs(L, Engine_funcs, 0);  
+    luaL_setfuncs(L, Engine_funcs, 0);
 
-    lua_setglobal(L, "Engine");       
-    
+    lua_setglobal(L, "Engine");
+
     luaL_newmetatable(L, "GameObjectMeta");
     luaL_setfuncs(L, GameObject_methods, 0);
 
@@ -213,6 +213,6 @@ void register_engine_api(lua_State* L)
 
     lua_pushcfunction(L, lua_newindex_gameobject);
     lua_setfield(L, -2, "__newindex");
-    lua_pop(L, 1); 
+    lua_pop(L, 1);
 
 }
