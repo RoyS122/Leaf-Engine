@@ -81,6 +81,10 @@ int lua_create_gameobject(lua_State* L) {
     ngo->free_obj = free_gameobject;
 
     add_gameobject_in_room(room, ngo);
+
+    ngo->x = x;
+    ngo->y = y;
+
     GameObject **ud = lua_newuserdata(L, sizeof(GameObject*));
     *ud = ngo;
     luaL_getmetatable(L, "GameObjectMeta");
