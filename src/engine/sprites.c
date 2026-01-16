@@ -53,33 +53,6 @@ int free_sprite(Sprite *s)
     return 0;
 }
 
-/**
- * Draw a sprite with a renderer
- * @param renderer A pointer to SDL_Renderer to render the sprite
- * @param sprite A pointer to the sprite to draw
- * @return 0 ok; 1 Invalid parameters; 2 Fail of rendering
- */
-int draw_sprite(SDL_Renderer *renderer, Sprite *sprite)
-{
-    if (renderer == NULL || sprite == NULL)
-    {
-        SDL_Log("Invalid parameters(renderer: %p sprite: %p)", renderer, sprite);
-        return 1;
-    }
-
-    SDL_Rect srcRect;
-    srcRect.x = sprite->currentFrame * sprite->width;
-    srcRect.y = 0;
-    srcRect.w = sprite->width;
-    srcRect.h = sprite->height;
-
-    if (SDL_RenderCopy(renderer, sprite->texture, &srcRect, &sprite->shape) != 0)
-    {
-        SDL_Log("Error on rendering: %c", SDL_GetError());
-        return 2;
-    };
-    return 0;
-}
 
 /**
  * Update state of a sprite (to animate it)
@@ -94,16 +67,47 @@ int update_sprite(Sprite *sprite, int frameRate)
         SDL_Log("Invalid parameters(sprite: %p frameRate: %i)", sprite, frameRate);
         return 1;
     }
+    SDL_Log("Sprite update: %d", sprite->frameCounter);
     sprite->frameCounter++;
     if (sprite->animSpeed != 0)
     {
-        if (sprite->frameCounter >= sprite->animSpeed)
+        if (sprite->frameCounter >= frameRate / sprite->animSpeed)
         {
             sprite->currentFrame = (sprite->currentFrame + 1) % sprite->totalFrames;
             sprite->frameCounter = 0;
         }
     }
     SDL_Log("current frame %i", sprite->currentFrame);
+    return 0;
+}
+
+
+/**
+ * Draw a sprite with a renderer
+ * @param renderer A pointer to SDL_Renderer to render the sprite
+ * @param sprite A pointer to the sprite to draw
+ * @return 0 ok; 1 Invalid parameters; 2 Fail of rendering
+ */
+int draw_sprite(SDL_Renderer *renderer, Sprite *sprite)
+{
+    if (renderer == NULL || sprite == NULL)
+    {
+        SDL_Log("Invalid parameters(renderer: %p sprite: %p)", renderer, sprite);
+        return 1;
+    }
+    
+
+    SDL_Rect srcRect;
+    srcRect.x = sprite->currentFrame * sprite->width;
+    srcRect.y = 0;
+    srcRect.w = sprite->width;
+    srcRect.h = sprite->height;
+
+    if (SDL_RenderCopy(renderer, sprite->texture, &srcRect, &sprite->shape) != 0)
+    {
+        SDL_Log("Error on rendering: %c", SDL_GetError());
+        return 2;
+    };
     return 0;
 }
 

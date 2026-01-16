@@ -53,7 +53,8 @@ int lua_setsprite(lua_State *L) {
     go->sprite.width = sprite_w / col;
     go->sprite.totalFrames = col * row;
     go->sprite.height = sprite_h / row;
-    SDL_Log("Check this totalframe: ", go->sprite.totalFrames);
+
+    SDL_Log("Check this totalframe: %d", go->sprite.totalFrames);
 
 
     go->sprite.shape.h = go->sprite.height ;

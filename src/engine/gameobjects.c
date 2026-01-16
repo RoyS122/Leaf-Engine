@@ -82,7 +82,7 @@ Vector2D dir_to(const int start_x, const int start_y, const int target_x, const 
     return direction;
 }
 
-int draw_gameobject(GameObject *go, SDL_Renderer *renderer) {
+int draw_gameobject(GameObject *go, SDL_Renderer *renderer, int frameRate ) {
    if (go == NULL)
     {
         SDL_Log("Invalid parameters(%p)", go);
@@ -92,6 +92,7 @@ int draw_gameobject(GameObject *go, SDL_Renderer *renderer) {
     {
         go->sprite.shape.x = go->x;
         go->sprite.shape.y = go->y;
+        update_sprite(&go->sprite, frameRate);
         draw_sprite(renderer, &go->sprite);
     }
     return 0; // ok
