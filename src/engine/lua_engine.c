@@ -46,16 +46,18 @@ int lua_setsprite(lua_State *L) {
         return luaL_error(L, "Failed to load texture");
     }
 
-    go->sprite.animSpeed = anim_speed;
-    go->sprite.width = sprite_w;
-    go->sprite.totalFrames = col * row;
-    go->sprite.height = sprite_h;
-
     if (row == 0) row = 1;
     if (col == 0) col = 1;
+    
+    go->sprite.animSpeed = anim_speed;
+    go->sprite.width = sprite_w / col;
+    go->sprite.totalFrames = col * row;
+    go->sprite.height = sprite_h / row;
+    SDL_Log("Check this totalframe: ", go->sprite.totalFrames);
 
-    go->sprite.shape.h = go->sprite.height / row;
-    go->sprite.shape.w =  go->sprite.width / col;
+
+    go->sprite.shape.h = go->sprite.height ;
+    go->sprite.shape.w =  go->sprite.width ;
 
     return 0;
 }
