@@ -181,7 +181,7 @@ int add_room(Game *game, Room *r)
         SDL_Log("Failed to allocate memory for new game object");
         return 2;
     }
-
+    r->CurrentGame = game;
     game->RoomArray[game->RoomNBR] = r;
     game->RoomNBR++;
     return 0;
@@ -363,6 +363,7 @@ int gameloop(Game *game) {
     SDL_Log("debut while:\n");
     while (running)
     {
+        frameStart = SDL_GetTicks(); // Obtenir le temps actuel
         // SDL_Log("debut while2:\n");
         while (SDL_PollEvent(&event))
         {
@@ -431,9 +432,6 @@ int gameloop(Game *game) {
             }
         }
 
-        frameStart = SDL_GetTicks(); // Obtenir le temps actuel
-
-
         if (game->menuOpen > -1)
         {
              if(!game->MenuNBR > 0) {
@@ -485,7 +483,7 @@ int gameloop(Game *game) {
         {
             if (game->GameObjectArray[i]->draw)
             {
-                game->GameObjectArray[i]->draw(game->GameObjectArray[i], game->renderer);
+                game->GameObjectArray[i]->draw(game->GameObjectArray[i], game->renderer, game->FrameDelay);
             }
             if(game->DisplayCollideBoxes) {
                 SDL_SetRenderDrawColor(game->renderer, 255, 0, 0, 255);

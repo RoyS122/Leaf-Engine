@@ -109,7 +109,7 @@ int draw_room(Room *r, SDL_Renderer *renderer) {
         {
             if (r->GameObjectArray[i]->draw)
             {
-                r->GameObjectArray[i]->draw(r->GameObjectArray[i], renderer);
+                r->GameObjectArray[i]->draw(r->GameObjectArray[i], renderer, r->CurrentGame->FrameRate);
             }
         }
 }

@@ -54,7 +54,7 @@ typedef struct GameObject
     int lua_step_ref;
 
     int (*step)(GameObject *go, Game *game);
-    int (*draw)(GameObject *go, SDL_Renderer *renderer);
+    int (*draw)(GameObject *go, SDL_Renderer *renderer, int frameRate);
     int (*free_obj)(GameObject *go);
 } GameObject;
 

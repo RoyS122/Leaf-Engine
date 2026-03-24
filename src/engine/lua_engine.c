@@ -49,14 +49,19 @@ int lua_setsprite(lua_State *L) {
         return luaL_error(L, "Failed to load texture");
     }
 
+    if (row == 0) row = 1;
+    if (col == 0) col = 1;
+    
     go->sprite.animSpeed = anim_speed;
     go->sprite.width = sprite_w / col;
     go->sprite.totalFrames = col * row;
     go->sprite.height = sprite_h / row;
 
+    SDL_Log("Check this totalframe: %d", go->sprite.totalFrames);
 
-    go->sprite.shape.h = go->sprite.height;
-    go->sprite.shape.w =  go->sprite.width;
+
+    go->sprite.shape.h = go->sprite.height ;
+    go->sprite.shape.w =  go->sprite.width ;
 
     return 0;
 }
@@ -84,6 +89,10 @@ int lua_create_gameobject(lua_State* L) {
     ngo->free_obj = free_gameobject;
 
     add_gameobject_in_room(room, ngo);
+
+    ngo->x = x;
+    ngo->y = y;
+
     GameObject **ud = lua_newuserdata(L, sizeof(GameObject*));
     *ud = ngo;
     luaL_getmetatable(L, "GameObjectMeta");
