@@ -1,11 +1,10 @@
 #include "game.h"
 
-#include "gameobjects.h"
 #include "menus.h"
 #include "rooms.h"
 #include <SDL2/SDL_ttf.h>
 /**
- * Initialize a game 
+ * Initialize a game
  * @param game A pointer to the game to initialize
  * @param framerate the fps targeted
  * @param window_width the horizontal size of the window (or of the game canva)
@@ -37,7 +36,7 @@ int init_game(Game *game, int framerate, int window_width, int window_height)
 
     game->menuOpen = 0;
     game->font = NULL;
-    
+
 	return 0;
 }
 
@@ -49,12 +48,12 @@ int init_game(Game *game, int framerate, int window_width, int window_height)
  */
 int add_menu(Game *game, Menu menu)
 {
-	
+
 	if(!game) {
 		SDL_Log("Invalid parameters");
 		return 1;
 	}
-	
+
     game->MenuArray = realloc(game->MenuArray, (game->MenuNBR + 1) * sizeof(Menu));
     if (game->MenuArray == NULL)
     {
@@ -94,7 +93,7 @@ int remove_menu(Game *game, int id)
         SDL_Log("Failed to allocate memory for remove menu");
         return 2;
     }
-	
+
     game->MenuNBR--;
 	SDL_Log("End remove menu id: %i", id);
 	return 0;
@@ -157,7 +156,7 @@ int calculate_fps(Uint32 *lastTime, int *frameCount, int *displayedFPS)
         *lastTime = currentTime;
         *frameCount = 0;
     }
-	
+
 	return 0;
 }
 
@@ -226,14 +225,14 @@ int remove_room(Game *game, int id)
  *  Switch to another room of the game
  * @param game A pointer to the game
  * @param roomId The id of the room you want to switch (-1 to unload all room and have no one loaded)
- * @return 0 ok; 1 Invalid parameters; 2 Fail to free room 
+ * @return 0 ok; 1 Invalid parameters; 2 Fail to free room
  */
 int switch_room(Game *game, int roomId) {
     if(!game || roomId >= game->RoomNBR || roomId < -1) return 1;
     if(game->currentRoom > -1) {
         if (free_room(game->RoomArray[game->currentRoom])) return 2;
     }
-    if(roomId != -1){ 
+    if(roomId != -1){
         game->currentRoom = roomId;
         const Room *gameR = game->RoomArray[game->currentRoom];
         if (gameR->setup != NULL) {
@@ -242,7 +241,7 @@ int switch_room(Game *game, int roomId) {
     }else{
         game->currentRoom = -1;
     }
-    
+
 
     return 0;
 }
@@ -307,7 +306,7 @@ int remove_gameobject(Game *game, int id)
 /**
  *  Free the attribute and free space allocated to game
  * @param game A pointer to the game to free
- * @return 0 ok; 1 Invalid parameters; 
+ * @return 0 ok; 1 Invalid parameters;
  */
 int free_game(Game *game) {
 	if (!game) {
@@ -318,13 +317,13 @@ int free_game(Game *game) {
     game->FrameDelay = 0;
     game->WindowWidth = 0;
     game->WindowHeight = 0;
-   
+
 	while(game->MenuNBR > 0){
 		remove_menu(game, game->MenuNBR - 1);
 	}
     game->MenuArray = NULL;
 	SDL_Log("End removing menus");
-  
+
 
 	while(game->GameObjectNBR > 0){
 		remove_gameobject(game, game->GameObjectNBR - 1);
@@ -389,7 +388,7 @@ int gameloop(Game *game) {
                         break;
 
                     case SDLK_UP: // Naviguer vers le haut
-					
+
                         m->selectedIndex = (m->selectedIndex - 1 + m->ButtonNBR) % m->ButtonNBR;
                         break;
                     case SDLK_RIGHT: // Naviguer vers la droite
@@ -397,7 +396,7 @@ int gameloop(Game *game) {
                         break;
 
                     case SDLK_LEFT: // Naviguer vers la gauche
-					
+
                         m->selectedIndex = (m->selectedIndex - 1 + m->ButtonNBR) % m->ButtonNBR;
                         break;
 
@@ -431,29 +430,29 @@ int gameloop(Game *game) {
                 break;
             }
         }
-      
+
         frameStart = SDL_GetTicks(); // Obtenir le temps actuel
-        
+
 
         if (game->menuOpen > -1)
         {
              if(!game->MenuNBR > 0) {
                 game->menuOpen = -1;
-               
+
              }else {
                 SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
                 SDL_RenderClear(game->renderer);
 
                 draw_menu(&game->MenuArray[game->menuOpen], game->renderer);
-      
+
                 SDL_RenderPresent(game->renderer);
                 continue;
              }
-         
-            
+
+
         }
-      
-      
+
+
         // SDL_Log("After menu render:\n");
         // Gestion des événements
 
@@ -462,8 +461,8 @@ int gameloop(Game *game) {
             if(game->RoomArray[game->currentRoom]->step != NULL) {
                 game->RoomArray[game->currentRoom]->step(game->RoomArray[game->currentRoom], game);
             }
-        
-        } 
+
+        }
         for (int i = 0; i < game->GameObjectNBR; i++)
         {
             if (game->GameObjectArray[i]->step)
@@ -481,7 +480,7 @@ int gameloop(Game *game) {
             if(game->RoomArray[game->currentRoom]->draw != NULL) {
                 game->RoomArray[game->currentRoom]->draw(game->RoomArray[game->currentRoom], game->renderer);
             }
-        } 
+        }
         for (int i = 0; i < game->GameObjectNBR; i++)
         {
             if (game->GameObjectArray[i]->draw)
@@ -496,7 +495,7 @@ int gameloop(Game *game) {
                 SDL_RenderDrawRect(game->renderer, &coll);
                 SDL_SetRenderDrawColor(game->renderer, 255, 255, 255, 255);
             }
-            
+
         }
 		SDL_Log("After game object draw:\n");
 		for(int i = game->GameObjectNBR - 1; i >= 0; i --) {
@@ -508,8 +507,8 @@ int gameloop(Game *game) {
         if (game->font != NULL) {
             TTF_SetFontSize(game->font, 24);
         }
-       
-    
+
+
         // char fpsText[32];
         // snprintf(fpsText, sizeof(fpsText), "FPS: %d", displayedFPS);
         // createTextTextureAndRender(game->renderer, game->font, fpsText, textColor, 10, 10);
@@ -530,7 +529,7 @@ int gameloop(Game *game) {
         }
 
         // print_player(player);
-        
+
     }
     return 0;
 }

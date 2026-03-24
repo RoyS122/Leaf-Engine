@@ -1,7 +1,10 @@
 #include "lua_engine.h"
+#include "lauxlib.h"
+#include "lua.h"
 #include "rooms.h"
 #include "gameobjects.h"
 #include "sprites.h"
+#include <stdio.h>
 
 Game* Engine_game = NULL;
 
@@ -176,12 +179,70 @@ int lua_newindex_gameobject(lua_State *L) {
 
     return luaL_error(L, "Unknown property '%s'", key);
 }
+/**
+ *  Custom include for lua script in the engine.
+ *
+ */
+int lua_custom_include(lua_State *L) {
+    const char *filename = luaL_checkstring(L, 1);
+    const char *scripts_path = lua_tostring(L, lua_upvalueindex(1)); // Get Value inherited from the constructor  of the function
+    char path[strlen(scripts_path) + strlen(filename) + 1];
+
+    snprintf(path, sizeof(path), "%s%s", scripts_path, filename);
+
+    if (luaL_dofile(L, path) != LUA_OK) {
+        return luaL_error(L, "Error expected file exposing lua function.");
+    }
+
+
+    return 1;
+}
+
+
+/**
+ *  Load a script with custom include in closure with the base path in upvalue
+ *  ( to allow local script of a game object to reach the other scripts in same directory)
+ */
+int lua_load_script(lua_State *L) {
+    const char *script_path = luaL_checkstring(L, 1);
+
+    int lastSep = -1;
+    for(int i = 0; i < strlen(script_path); i ++) {
+        if((char)*(script_path + i) == '/' ) {
+            lastSep = i;
+        }
+    }
+    int baseSize = 0;
+    if(lastSep != -1) {
+        baseSize = lastSep + 1;
+    }
+
+    char basePath[baseSize + 1];
+    int i = 0;
+    for(i = 0; i < baseSize; i ++) {
+        basePath[i] = (char)*(script_path + i);
+    }
+    basePath[i] = '\0';
+    printf("\n %s \n", basePath);
+    printf("\n %s \n", script_path);
+
+    if (luaL_loadfile(L, script_path) != LUA_OK) {
+        return luaL_error(L, "Error expected file exposing lua function. (%s)", script_path);
+    }
+
+    lua_pushstring(L, basePath);
+    lua_pushcclosure(L, lua_custom_include, 1);
+
+    lua_call(L, 1, 1);
+
+    return 1;
+}
 
 
 static const luaL_Reg Engine_funcs[] = {
     {"create_room", lua_create_room},
     {"log", lua_engine_log},
-
+    {"load_script", lua_load_script},
     {"create_gameobject", lua_create_gameobject},
     // {"spawn_object", lua_spawn_object},
     // Ajoute toutes tes fonctions ici ↓↓↓

@@ -107,7 +107,7 @@ int step_gameobject(GameObject *go, Game *game) {
     if(game->L != NULL && go->lua_step_ref != -1) {
         lua_rawgeti(game->L, LUA_REGISTRYINDEX, go->lua_step_ref);
 
-    
+
         GameObject **ud = lua_newuserdata(game->L, sizeof(GameObject*));
         *ud = go;
         luaL_getmetatable(game->L, "GameObjectMeta");
@@ -117,7 +117,7 @@ int step_gameobject(GameObject *go, Game *game) {
             SDL_Log("Lua step error: %s", lua_tostring(game->L, -1));
             lua_pop(game->L, 1);
         }
-    } 
+    }
     return 0; // ok
 }
 
