@@ -43,6 +43,14 @@ int free_gameobject(GameObject *go)
     return 0;
 }
 
+int set_camera(Game *game, Camera *cam) {
+    if (!game || !cam) {
+        return 1;
+    }
+
+    return 0;
+}
+
 /**
  * Check if there is a meet point of 2 game objects (by rectangle sprite shape)
  * @param a The first game object

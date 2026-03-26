@@ -15,8 +15,7 @@
 #endif
 
 // Inclure les headers de ton moteur
-#include "game.h"        // Pour Game
-#include "rooms.h"       // Pour Room et create_room
+#include "types.h"
 
 // Déclaration du pointeur global
 extern Game* Engine_game;

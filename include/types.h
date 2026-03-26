@@ -23,7 +23,15 @@ typedef struct GameObject GameObject;
 typedef struct Room Room;
 
 
+
+
 #define MAX_BUTTONS 5 // The max number of buttons on a menu
+
+typedef struct {
+    float x, y;
+    int width, height;
+    const GameObject *Follow;
+} Camera;
 
 typedef struct
 {
@@ -77,6 +85,8 @@ typedef struct
     int selectedIndex;
 } Menu;
 
+
+
 typedef struct Room {
 
     GameObject **GameObjectArray;
@@ -84,6 +94,7 @@ typedef struct Room {
 
     Game *CurrentGame;
 
+    Camera *CurrentCamera;
 
     int (*setup)(Room *r);
     int (*step)(Room *r, Game *game);
@@ -91,6 +102,9 @@ typedef struct Room {
     int (*free_room)(Room *r);
 
 } Room;
+
+
+
 
 typedef struct Game
 {
@@ -116,10 +130,15 @@ typedef struct Game
     GameObject **GameObjectArray;
     int GameObjectNBR;
 
+    Camera *CurrentCamera;
+
     int DisplayCollideBoxes;
 
     Menu *MenuArray;
     int MenuNBR;
+
 } Game;
+
+
 
 #endif // TYPES_H

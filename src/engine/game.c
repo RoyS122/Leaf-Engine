@@ -26,6 +26,7 @@ int init_game(Game *game, int framerate, int window_width, int window_height)
 
     game->MenuArray = NULL;
     game->MenuNBR = 0;
+    // game->
 
     game->GameObjectArray = NULL;
     game->GameObjectNBR = 0;
@@ -34,7 +35,8 @@ int init_game(Game *game, int framerate, int window_width, int window_height)
     game->RoomNBR = 0;
     game->currentRoom=-1;
 
-    game->menuOpen = 0;
+    game->CurrentCamera = NULL;
+    game->menuOpen = -1;
     game->font = NULL;
 
 	return 0;
@@ -75,18 +77,24 @@ int add_menu(Game *game, Menu menu)
  */
 int remove_menu(Game *game, int id)
 {
-    if (id < 0 || id >= game->MenuNBR)
+    if (!game || id < 0 || id >= game->MenuNBR)
     {
         SDL_Log("Menu %i does not exist.", id);
         return 1;
     }
+
+
+
 	free_menu(&game->MenuArray[id]);
     for (int i = id; i < game->MenuNBR - 1; i++)
     {
         game->MenuArray[i] = game->MenuArray[i + 1];
     }
 
-    game->MenuArray = realloc(game->MenuArray, (game->MenuNBR - 1) * sizeof(Menu));
+
+    game->MenuNBR--;
+
+    game->MenuArray = realloc(game->MenuArray, (game->MenuNBR) * sizeof(Menu));
 	SDL_Log("End realloc Menu array");
     if (game->MenuArray == NULL && game->MenuNBR - 1 > 0)
     {
@@ -94,7 +102,11 @@ int remove_menu(Game *game, int id)
         return 2;
     }
 
-    game->MenuNBR--;
+    if(game->MenuNBR <= 0) {
+        free(game->MenuArray);
+        game->MenuArray = NULL;
+    }
+
 	SDL_Log("End remove menu id: %i", id);
 	return 0;
 }
@@ -245,6 +257,16 @@ int switch_room(Game *game, int roomId) {
 
     return 0;
 }
+
+int set_camera(Game *game, Camera *cam) {
+    if (!game || !cam) {
+        return 1;
+    }
+
+    game->CurrentCamera = cam;
+    return 0;
+}
+
 /**
  *  Add a gameobject to game
  * @param game A pointer to the game
@@ -320,8 +342,9 @@ int free_game(Game *game) {
 
 	while(game->MenuNBR > 0){
 		remove_menu(game, game->MenuNBR - 1);
+
 	}
-    game->MenuArray = NULL;
+	game->MenuArray = NULL;
 	SDL_Log("End removing menus");
 
 
@@ -335,14 +358,93 @@ int free_game(Game *game) {
     game->GameObjectArray = NULL;
 
     game->currentRoom = 0;
-    game->menuOpen = 0;
+    game->menuOpen = -1;
 
     lua_close(game->L);
 	return 0;
 }
 
 
+int GameRender(Game *game, SDL_Renderer *renderer) {
 
+    if (game->menuOpen > -1 && game->MenuNBR > game->menuOpen)
+    {
+         if(!(game->MenuNBR > 0)) {
+            game->menuOpen = -1;
+
+         }else {
+            SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
+            SDL_RenderClear(game->renderer);
+
+            draw_menu(&game->MenuArray[game->menuOpen], game->renderer);
+
+            SDL_RenderPresent(game->renderer);
+            return 0;
+         }
+
+
+    }
+
+
+    SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
+    SDL_RenderClear(game->renderer);
+
+    if (game->currentRoom > - 1) {
+        if(game->RoomArray[game->currentRoom]->draw != NULL) {
+            game->RoomArray[game->currentRoom]->draw(game->RoomArray[game->currentRoom], game->renderer);
+        }
+    }
+    for (int i = 0; i < game->GameObjectNBR; i++)
+    {
+        if (game->GameObjectArray[i]->draw)
+        {
+            game->GameObjectArray[i]->draw(game->GameObjectArray[i], game->renderer, game->FrameDelay);
+        }
+        if(game->DisplayCollideBoxes) {
+            SDL_SetRenderDrawColor(game->renderer, 255, 0, 0, 255);
+            SDL_Rect coll =  game->GameObjectArray[i]->collision;
+            coll.x +=  game->GameObjectArray[i]->x;
+            coll.y +=  game->GameObjectArray[i]->y;
+            SDL_RenderDrawRect(game->renderer, &coll);
+            SDL_SetRenderDrawColor(game->renderer, 255, 255, 255, 255);
+        }
+
+    }
+
+    if (game->font != NULL) {
+        TTF_SetFontSize(game->font, 24);
+    }
+
+    SDL_RenderPresent(game->renderer);
+    return 0;
+}
+
+int GameLogic(Game *game) {
+
+    if (game->currentRoom > - 1) {
+        if(game->RoomArray[game->currentRoom]->step != NULL) {
+            game->RoomArray[game->currentRoom]->step(game->RoomArray[game->currentRoom], game);
+        }
+
+    }
+    for (int i = 0; i < game->GameObjectNBR; i++)
+    {
+        if (game->GameObjectArray[i]->step)
+        {
+            game->GameObjectArray[i]->step(game->GameObjectArray[i], game);
+        }
+    }
+
+
+		for(int i = game->GameObjectNBR - 1; i >= 0; i --) {
+			if (game->GameObjectArray[i]->killed) {
+				SDL_Log("try to kill %i", i);
+				remove_gameobject(game, i);
+			}
+		}
+
+		return 0;
+}
 
 int gameloop(Game *game) {
     SDL_Log("debut gameloop function:\n");
@@ -351,10 +453,7 @@ int gameloop(Game *game) {
 
     Uint32 frameStart;
     int frameTime;
-    int lastFrameEnnemySpawn = 0;
-    int DelaySpawnEnnemy = game->FrameRate * 1;
 
-    SDL_Color textColor = {255, 255, 255, 255};
 
 
     Uint32 lastTime = SDL_GetTicks();
@@ -376,7 +475,7 @@ int gameloop(Game *game) {
                 running = 0;
                 break;
             case SDL_KEYDOWN:
-                if (game->menuOpen > -1)
+                if (game->menuOpen > -1 && game->menuOpen < game->MenuNBR)
                 {
                     Menu *m = &(game->MenuArray[game->menuOpen]);
                     if(!m) {
@@ -419,7 +518,6 @@ int gameloop(Game *game) {
 							b->onUse(game);
                         }
                     }
-                    // Ici, tu peux exécuter l'action liée au bouton sélectionné
                     break;
 
                     case SDLK_ESCAPE: // Quitter le menu
@@ -431,94 +529,10 @@ int gameloop(Game *game) {
                 break;
             }
         }
-
-        if (game->menuOpen > -1)
-        {
-             if(!game->MenuNBR > 0) {
-                game->menuOpen = -1;
-
-             }else {
-                SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
-                SDL_RenderClear(game->renderer);
-
-                draw_menu(&game->MenuArray[game->menuOpen], game->renderer);
-
-                SDL_RenderPresent(game->renderer);
-                continue;
-             }
-
-
-        }
-
-
-        // SDL_Log("After menu render:\n");
-        // Gestion des événements
-
-        // step_player(&player, &game);
-        if (game->currentRoom > - 1) {
-            if(game->RoomArray[game->currentRoom]->step != NULL) {
-                game->RoomArray[game->currentRoom]->step(game->RoomArray[game->currentRoom], game);
-            }
-
-        }
-        for (int i = 0; i < game->GameObjectNBR; i++)
-        {
-            if (game->GameObjectArray[i]->step)
-            {
-                game->GameObjectArray[i]->step(game->GameObjectArray[i], game);
-            }
-        }
-        // SDL_Log("After game object step:\n");
-
-        SDL_SetRenderDrawColor(game->renderer, 0, 0, 0, 255);
-        SDL_RenderClear(game->renderer);
-
-        // draw_player(player, renderer);
-        if (game->currentRoom > - 1) {
-            if(game->RoomArray[game->currentRoom]->draw != NULL) {
-                game->RoomArray[game->currentRoom]->draw(game->RoomArray[game->currentRoom], game->renderer);
-            }
-        }
-        for (int i = 0; i < game->GameObjectNBR; i++)
-        {
-            if (game->GameObjectArray[i]->draw)
-            {
-                game->GameObjectArray[i]->draw(game->GameObjectArray[i], game->renderer, game->FrameDelay);
-            }
-            if(game->DisplayCollideBoxes) {
-                SDL_SetRenderDrawColor(game->renderer, 255, 0, 0, 255);
-                SDL_Rect coll =  game->GameObjectArray[i]->collision;
-                coll.x +=  game->GameObjectArray[i]->x;
-                coll.y +=  game->GameObjectArray[i]->y;
-                SDL_RenderDrawRect(game->renderer, &coll);
-                SDL_SetRenderDrawColor(game->renderer, 255, 255, 255, 255);
-            }
-
-        }
-		SDL_Log("After game object draw:\n");
-		for(int i = game->GameObjectNBR - 1; i >= 0; i --) {
-			if (game->GameObjectArray[i]->killed) {
-				SDL_Log("try to kill %i", i);
-				remove_gameobject(game, i);
-			}
-		}
-        if (game->font != NULL) {
-            TTF_SetFontSize(game->font, 24);
-        }
-
-
-        // char fpsText[32];
-        // snprintf(fpsText, sizeof(fpsText), "FPS: %d", displayedFPS);
-        // createTextTextureAndRender(game->renderer, game->font, fpsText, textColor, 10, 10);
-
-        // char ennNBR[32];
-        // snprintf(ennNBR, sizeof(ennNBR), "Ennemies: %d", game->GameObjectNBR - 1);
-        // createTextTextureAndRender(game->renderer, game->font, ennNBR, textColor, 10, 40);
-
-        SDL_RenderPresent(game->renderer);
+        GameLogic(game);
+		GameRender(game, game->renderer);
 
         calculate_fps(&lastTime, &frameCount, &displayedFPS);
-        // Calculer le temps écoulé et attendre si nécessaire
 
         frameTime = SDL_GetTicks() - frameStart; // Temps écoulé depuis le début de la frame
         if (frameTime < game->FrameDelay)

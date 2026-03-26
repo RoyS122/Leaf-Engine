@@ -29,6 +29,15 @@ int add_gameobject_in_room(Room *r, GameObject *go)
     return 0;
 };
 
+int set_room_camera(Room *room, Camera *cam) {
+    if (!room || !cam) {
+        return 1;
+    }
+
+    room->CurrentCamera = cam;
+    return 0;
+}
+
 /**
  *  Remove a gameobject by id
  * @param r A pointer to the room
@@ -66,18 +75,18 @@ int remove_gameobject_in_room(Room *r, int id)
 * @param r room to clear
 * @return 0 ok; 1 Invalid parameters; 2 Fail to remove game object
 */
-int remove_gameobject_killed_in_room(Room *r) 
+int remove_gameobject_killed_in_room(Room *r)
 {
     if (!r) {
         SDL_Log("Invalid room pointer");
         return 1;
     }
-    
+
     for (int i = r->GameObjectNBR - 1; i >= 0; i--) {
         if (r->GameObjectArray[i]->killed) {
-      
+
             if (remove_gameobject_in_room(r, i) != 0) return 2;
-            
+
         }
     }
     return 0;
@@ -98,7 +107,7 @@ int free_room(Room *r) {
 		if (remove_gameobject_in_room(r, r->GameObjectNBR - 1)) return 2;
 	}
     r->GameObjectArray = NULL;
-    
+
 
 	return 0;
 }
@@ -129,7 +138,7 @@ int step_room(Room *r, Game *game) {
 /**
  * Initialize the attribute of a room
  * @param r A pointer to the game to free
- * @return 0 ok; 1 Invalid parameters; 
+ * @return 0 ok; 1 Invalid parameters;
  */
 int init_room(Room *r){
     if (!r) {
@@ -137,12 +146,13 @@ int init_room(Room *r){
         return 1;
     }
     r->CurrentGame = NULL;
+    r->CurrentCamera = NULL;
     r->GameObjectArray = NULL;
     r->GameObjectNBR = 0;
     r->setup = NULL;
+
     r->free_room = free_room;
     r->step = step_room;
     r->draw = draw_room;
     return 0;
 }
-

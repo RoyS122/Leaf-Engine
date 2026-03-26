@@ -13,6 +13,10 @@
 */
 int draw_menu(Menu *m, SDL_Renderer *renderer)
 {
+    if (m == NULL || m->buttons == NULL) {
+        SDL_Log("Menue does not exist");
+        return 1; // On ne dessine rien si le menu n'existe pas
+    }
     for (int i = 0; i < m->ButtonNBR; i++)
     {
         if (m->buttons[i] != NULL)
@@ -116,7 +120,7 @@ int free_menu(Menu *m)
     }
 
     // Free all buttons in the menu
-	
+
   while(m->ButtonNBR > 0) {
 	remove_button(m, m->ButtonNBR - 1);
   }
